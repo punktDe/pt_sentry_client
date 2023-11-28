@@ -1,0 +1,40 @@
+{
+    "name": "punktde/pt-sentry-client",
+    "type": "typo3-cms-extension",
+    "description": "Sentry package",
+    "authors": [
+        {
+            "name": "Team evo",
+            "email": "evo@punkt.de",
+            "homepage": "https://punkt.de"
+        }
+    ],
+    "keywords": [
+        "TYPO3",
+        "cms",
+        "site package"
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-core": "^12.4",
+        "sentry/sentry" : "^4.0",
+        "neos/utility-files": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PunktDe\\PtSentryClient\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pt_sentry_client"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": false,
+            "typo3/class-alias-loader": false
+        }
+    }
+}
