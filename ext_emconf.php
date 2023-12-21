@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF['sentry'] = [
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Sentry Client',
     'description' => 'Sentry Client for TYPO3 - https://www.getsentry.com/',
     'category' => 'services',
