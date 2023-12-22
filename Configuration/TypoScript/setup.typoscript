@@ -1,0 +1,3 @@
+[getenv("SENTRY_DSN")]
+    config.contentObjectExceptionHandler = PunktDe\PtSentryClient\Handler\Frontend\SentryProductionExceptionHandler
+[END]
