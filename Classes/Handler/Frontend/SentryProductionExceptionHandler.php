@@ -20,7 +20,7 @@ class SentryProductionExceptionHandler extends ProductionExceptionHandler
      */
     public function handle(
         \Exception $exception,
-        AbstractContentObject $contentObject = null,
+        ?AbstractContentObject $contentObject = null,
         $contentObjectConfiguration = []): string
     {
         $client = GeneralUtility::makeInstance(Client::class);
